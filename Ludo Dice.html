@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="result"></h1>
+    <button class="action">Roll The Dice</button>
+</body>
+<script>
+    let result = document.querySelector(".result");
+    let action = document.querySelector(".action");
+
+    action.onclick = function(){
+        let diceValue = Math.ceil(Math.random() * 6);
+        result.innerHTML = diceValue;
+    }
+</script>
+</html>
